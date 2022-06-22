@@ -795,7 +795,7 @@ class PickMe:
         elif option == 3:
             self.movie.sort_movie_by_year(self.temp_data.get_movie_list())
 
-class TestMovie(unittest.TestCase):
+class TestAll(unittest.TestCase):
     # def setup(self):
 
     def test_start(self):
@@ -811,9 +811,11 @@ if __name__ == "__main__":
     # user = User()
     # userid = user.enter()
     # print(userid)
-
-    pickme = PickMe()
-    pickme.main_entrance()
+    # pickme = PickMe()
+    # pickme.main_entrance()
+    test = TestAll()
+    test.test_start()
+    
 
 # while True:
 #     option = int(input("선택지 고르세요: "))
